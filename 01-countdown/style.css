@@ -1,0 +1,68 @@
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+*, ::before, ::after {
+    box-sizing: inherit;
+}
+
+.page-body {
+    position: relative;
+    display: grid;
+    min-width: 320px;
+    min-height: 100%;
+    word-break: break-word;
+    background-color: lightgrey;
+    background-image: url(img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Montserrat, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: left;
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    margin: 0px;
+    background-position: center center;
+}
+
+.timer {
+    align-self: center;
+    justify-self: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    align-items: center;
+    width: 540px;
+    height: auto;
+    background-color: rgb(38, 34, 40);
+    z-index: 5;
+    text-align: center;
+    padding: 15px 5px;
+}
+
+.timer__block {
+    position: relative;
+    padding: 15px;
+}
+
+.timer__number {
+    font-size: 68px;
+    letter-spacing: 0.06em;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.timer__text {
+    opacity: 0.8;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url("../fonts/Montserrat/Montserrat-Regular.woff2"), 
+        url("../fonts/Montserrat/Montserrat-Regular.woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
